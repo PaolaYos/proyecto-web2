@@ -1,0 +1,279 @@
+html, body {
+    background: linear-gradient(to right, red, yellow, green); /* Degradado de color */
+    margin: 0;
+    padding: 10;
+    height: 100%;  
+    display: flex; 
+    flex-direction: column; 
+}
+
+h2 {
+    font-size: 1.2rem;  /* Tamaño de fuente mediano */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrado del texto */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    line-height: 1.5; /* Altura de línea */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #f5d1d1; 
+    border-left: 5px solid #575dff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+}
+
+h2:hover {
+    color: #575dff; 
+    transform: translateY(-5px); 
+    transition: all 0.3s ease-in-out; 
+}
+.padre {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    padding: auto;
+}
+
+/* Menú horizontal elegante */
+.horizontal-menu {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo ligeramente oscuro */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 20px; /* Añadir margen superior */
+    padding: 10px 0; /* Relleno vertical para un diseño más espaciado */
+}
+
+.horizontal-menu li {
+    margin: 0;
+}
+
+.horizontal-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 20px; /* Un poco más de espacio */
+    background-color: #fff; /* Fondo blanco para los enlaces */
+    border: 2px solid transparent; /* Borde transparente por defecto */
+    border-radius: 30px; /* Bordes muy redondeados */
+    transition: all 0.3s ease-in-out; /* Transiciones suaves */
+    font-weight: bold; /* Fuentes en negrita */
+    font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+}
+
+/* Efecto hover */
+.horizontal-menu li a:hover {
+    color: #fff;
+    background-color: #575dff; /* Fondo al pasar el mouse */
+    border-color: #575dff; /* Borde del mismo color */
+    transform: translateY(-4px); /* Efecto de elevación */
+}
+
+/* Efecto cuando el enlace está enfocado */
+.horizontal-menu li a:focus {
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+    box-shadow: 0 0 10px rgba(87, 93, 255, 0.6); /* Sombra sutil para enfoque */
+}
+
+
+.footer {
+    background-color: auto;
+    color: #120101;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    margin-top: 50px; 
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 10;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li a {
+    color: #575dff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #fff;
+}
+
+
+.description {
+    display: flex; /* Usamos flexbox para las columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    gap: 20px; /* Añadir espacio entre las columnas */
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .description .columna {
+    flex: 1; 
+    max-width: 48%;
+    box-sizing: border-box;
+  }
+  .estilo-imagen {
+    height: 200px; /* Define una altura fija para todas las imágenes */
+    object-fit: cover; 
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    border-radius: 5px; /* Opcional: bordes redondeados para las imágenes */
+}
+
+.estilo-imagen-reposteria {
+    height: 200px; 
+    object-fit: cover; 
+    width: 100%; 
+    border-radius: 10px; 
+}
+.receta{
+    padding: auto;
+}
+.row-separation {
+     padding-top: 10px;/* Ajusta este valor según tus necesidades */
+  }
+
+
+/*tarjetas que hice*/
+
+.recipe-card {
+    background-color: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    overflow: hidden;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.recipe-content {
+    padding: 15px;
+}
+
+.recipe-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.recipe-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.recipe-button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/*----------------*/
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: auto;
+    padding: 15px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-content {
+    padding: 10px;
+}
+
+.recipe-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.recipe-description {
+    font-size: 14px;
+    color: #0a0909;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.star {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.recipe-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.recipe-button:hover {
+    background-color: #0056b3;
+}
+
+
